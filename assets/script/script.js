@@ -40,19 +40,8 @@ function createSpeciesCard(species) {
          role="button"
          tabindex="0"
          aria-label="Detalhes de ${species.name}">
-      <div class="species-image">
-        <svg viewBox="0 0 200 200">
-          <path d="M40,100 Q100,40 160,100 T280,100" 
-                stroke="rgba(255,255,255,0.3)" 
-                stroke-width="2" 
-                fill="none" />
-          <path d="M40,120 Q100,60 160,120 T280,120" 
-                stroke="rgba(255,255,255,0.3)" 
-                stroke-width="2" 
-                fill="none" />
-          <circle cx="100" cy="100" r="30" 
-                  fill="rgba(255,255,255,0.2)" />
-        </svg>
+      <div  style="width: 100%; height: 100%; background-image: url(\'/assets/img/Fotos-briofitas-ciclo-carbono-1.png\'); background-size: cover; background-position: center;"
+ class="species-image">
       </div>
       <div class="species-name-overlay">
         <h3>${species.name}</h3>
