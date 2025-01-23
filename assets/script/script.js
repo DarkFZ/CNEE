@@ -28,6 +28,16 @@ const speciesData = [
     distribution: "Santo Antão",
     ecology: "Indicadora de qualidade ambiental em ecossistemas montanhosos",
     pdfUrl: "https://catnee.cv/docs/tortula_bogosica.pdf"
+  },
+  {
+    name: "Bryum canariense",
+    scientificName: "Bryum canariense Brid.",
+    status: "Vulneravel",
+    description: "Musgo encontrado em rochas vulcânicas em altitude média.",
+    habitat: "Rochas vulcânicas entre 400-700m de altitude",
+    distribution: "São Vicente, Santiago",
+    ecology: "Pioneira na colonização de rochas, contribuindo para formação de solo",
+    pdfUrl: "https://catnee.cv/docs/bryum_canariense.pdf"
   }
 ];
 
@@ -40,7 +50,7 @@ function createSpeciesCard(species) {
          role="button"
          tabindex="0"
          aria-label="Detalhes de ${species.name}">
-      <div  style="width: 100%; height: 100%; background-image: url(\'/assets/img/Fotos-briofitas-ciclo-carbono-1.png\'); background-size: cover; background-position: center;"
+      <div  style="width: 100%; height: 100%; background-image: url('/assets/img/Fotos-briofitas-ciclo-carbono-1.png'); background-size: cover; background-position: center;"
  class="species-image">
       </div>
       <div class="species-name-overlay">
