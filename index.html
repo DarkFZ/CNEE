@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CATNEE</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" href="./assets/style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/style.css">
 </head>
+
 <body>
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <a href="#inicio" class="navbar-brand" aria-label="CATNEE Home">
-      <img src="./assets/img/logo1.png" id="logo" width="125px" height="80px" >
+      <img src="./assets/img/logo1.png" id="logo" width="125px" height="80px">
     </a>
-    <button class="fa fa-bars" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" >
+    <button class="fa fa-bars" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
     </button>
     <div class="nav-links" role="menu">
       <a href="#inicio" role="menuitem">Início</a>
@@ -24,6 +26,32 @@
       <a href="#contato" role="menuitem">Contato</a>
     </div>
   </nav>
+  <button style="display: none;">Add</button>
+  <div id="FormOUT" style="display: none;">
+    <div id="FormIN" class="flex species-modal" style="display: none;" >
+
+      <p>Name</p>
+      <input type="text">
+      <p>Scientific name</p>
+      <input type="text">
+      <p>Status</p>
+      <input type="text">
+      <p>Descricao</p>
+      <input type="text">
+      <p>Habitat</p>
+      <input type="text">
+      <p>Distribuition</p>
+      <input type="text">
+      <p>Ecology function</p>
+      <input type="text">
+      <p>URL do documento pdf</p>
+      <input type="text">
+      <p>URL imagem</p>
+      <input type="file" download>
+      
+    </div>
+  </div>
+
 
   <section id="inicio" class="hero">
     <div class="hero-content fade-in">
@@ -35,53 +63,55 @@
   <section id="sobre" class="section fade-in">
     <div class="section-content">
       <h2>Sobre o CATNEE</h2>
-      <p>O Catálogo Nacional de Espécies Endêmicas e Ameaçadas em Cabo Verde (CATNEE) é uma iniciativa dedicada à documentação e preservação da biodiversidade única de Cabo Verde, com foco especial nas briófitas - um grupo de pequenas plantas que desempenham um papel crucial nos ecossistemas locais.</p>
+      <p>O Catálogo Nacional de Espécies Endêmicas e Ameaçadas em Cabo Verde (CATNEE) é uma iniciativa dedicada à
+        documentação e preservação da biodiversidade única de Cabo Verde, com foco especial nas briófitas - um grupo de
+        pequenas plantas que desempenham um papel crucial nos ecossistemas locais.</p>
     </div>
     <div>
       <div id="logob" class="section-content">
-        <img  src="./assets/img/Especies_endemicas__4_-removebg-preview.png"  height="100%" style="max-width:500px;" alt="logotipo da CATNEE">
+        <img id="imglogo" src="./assets/img/Especies_endemicas__4_-removebg-preview.png" 
+          alt="logotipo da CATNEE">
       </div>
     </div>
   </section>
 
   <section id="especies" class="section fade-in">
-  
-      <div class="section-content flex">
-        <div class="search-container" role="search">
-          <i class="fas fa-search search-icon" aria-hidden="true"></i>
-          <input type="text" class="search-box" 
-                 placeholder="Pesquisar espécies..." 
-                 id="searchInput"
-                 aria-label="Pesquisar espécies">
-        </div>
-  
-        <div class="usage-guide">
-          <div class="guide-card fade-in">
-            <i class="fas fa-info-circle" style="color: var(--primary); font-size: 1.2rem; margin-right: 10px;"></i>
-            <div class="guide-content">
-              <h3>Como explorar as espécies</h3>
-              <ul class="guide-list">
-                <li><i class="fas fa-search"></i> Use a barra de pesquisa para encontrar espécies específicas</li>
-                <li><i class="fas fa-filter"></i> Filtre por status de conservação usando os botões acima</li>
-                <li><i class="fas fa-hand-pointer"></i> Passe o mouse ou toque nos cards para ver informações detalhadas</li>
-                <li><i class="fas fa-expand"></i> Clique em um card para abrir mais detalhes em uma janela expandida</li>
-              </ul>
-            </div>
+
+    <div class="section-content flex">
+      <div class="search-container" role="search">
+        <i class="fas fa-search search-icon" aria-hidden="true"></i>
+        <input type="text" class="search-box" placeholder="Pesquisar espécies..." id="searchInput"
+          aria-label="Pesquisar espécies">
+      </div>
+
+      <div class="usage-guide">
+        <div class="guide-card fade-in">
+          <i class="fas fa-info-circle" style="color: var(--primary); font-size: 1.2rem; margin-right: 10px;"></i>
+          <div class="guide-content">
+            <h3>Como explorar as espécies</h3>
+            <ul class="guide-list">
+              <li><i class="fas fa-search"></i> Use a barra de pesquisa para encontrar espécies específicas</li>
+              <li><i class="fas fa-filter"></i> Filtre por status de conservação usando os botões acima</li>
+              <li><i class="fas fa-hand-pointer"></i> Passe o mouse ou toque nos cards para ver informações detalhadas
+              </li>
+              <li><i class="fas fa-expand"></i> Clique em um card para abrir mais detalhes em uma janela expandida</li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="species-filters">
-        <button class="filter-btn active" data-filter="all">Todas</button>
-        <button class="filter-btn" data-filter="perigo">Em Perigo</button>
-        <button class="filter-btn" data-filter="vulneravel">Vulnerável</button>
-        <button class="filter-btn" data-filter="estavel">Estavel</button>
-      </div>
+    <div class="species-filters">
+      <button class="filter-btn active" data-filter="all">Todas</button>
+      <button class="filter-btn" data-filter="perigo">Em Perigo</button>
+      <button class="filter-btn" data-filter="vulneravel">Vulnerável</button>
+      <button class="filter-btn" data-filter="estavel">Estavel</button>
+    </div>
 
-      <div class="species-grid" id="speciesGrid">
-        <!-- Os cards serao adicionados dinamicamente -->
-      </div>
-   
+    <div class="species-grid" id="speciesGrid">
+      <!-- Os cards serao adicionados dinamicamente -->
+    </div>
+
   </section>
 
   <section id="importancia" class="section fade-in">
@@ -103,7 +133,7 @@
       <div class="download-grid">
         <div class="download-card">
           <div class="download-icon">
-            <i class="fas fa-file-pdf"></i>  
+            <i class="fas fa-file-pdf"></i>
           </div>
           <h3>Catálogo Completo</h3>
           <p>Download do catálogo completo com todas as espécies de briófitas.</p>
@@ -158,4 +188,6 @@
 
   <script src="./assets/script/script.js"></script>
 
-</body></html>
+</body>
+
+</html>
