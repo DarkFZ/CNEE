@@ -21,14 +21,16 @@
       <a href="#inicio" role="menuitem">Início</a>
       <a href="#sobre" role="menuitem">Sobre</a>
       <a href="#especies" role="menuitem">Espécies</a>
-      <a href="#importancia" role="menuitem">Importância</a>
-      <a href="#downloads" role="menuitem">Downloads</a>
-      <a href="#contato" role="menuitem">Contato</a>
+      <a href="#importancia" role="menuitem">Info</a>
     </div>
+
+     <a id="cnt" href="#contato" role="menuitem"><i class="fa-regular fa-user" style="transform: scale(1.5);color: white;" aria-hidden="false"></i></a>
+   
   </nav>
+
   <button style="display: none;">Add</button>
   <div id="FormOUT" style="display: none;">
-    <div id="FormIN" class="flex species-modal" style="display: none;" >
+    <div id="FormIN" class="flex species-modal" style="display: none;">
 
       <p>Name</p>
       <input type="text">
@@ -48,7 +50,7 @@
       <input type="text">
       <p>URL imagem</p>
       <input type="file" download>
-      
+
     </div>
   </div>
 
@@ -59,6 +61,8 @@
       <p>Catálogo Nacional de Espécies Endêmicas e Ameaçadas em Cabo Verde</p>
     </div>
   </section>
+  
+  <a href="#inicio" id="goBack" class="fa-solid fa-arrow-up fade-in"></a>
 
   <section id="sobre" class="section fade-in">
     <div class="section-content">
@@ -69,19 +73,29 @@
     </div>
     <div>
       <div id="logob" class="section-content">
-        <img id="imglogo" src="./assets/img/Especies_endemicas__4_-removebg-preview.png" 
-          alt="logotipo da CATNEE">
+        <img id="imglogo" src="./assets/img/Especies_endemicas__4_-removebg-preview.png" alt="logotipo da CATNEE">
       </div>
     </div>
   </section>
 
   <section id="especies" class="section fade-in">
 
-    <div class="section-content flex">
-      <div class="search-container" role="search">
-        <i class="fas fa-search search-icon" aria-hidden="true"></i>
-        <input type="text" class="search-box" placeholder="Pesquisar espécies..." id="searchInput"
-          aria-label="Pesquisar espécies">
+    <div id="searchArea" class="section-content flex">
+      <div class="search-container flex" style="flex-direction: column;" role="search">
+
+        <div class="search-container flex">
+          <i class="fas fa-search search-icon" aria-hidden="true"></i>
+          <input type="text" class="search-box" placeholder="Pesquisar espécies..." id="searchInput"
+            aria-label="Pesquisar espécies">
+        </div>
+
+
+        <div class="species-filters">
+          <button class="filter-btn active" data-filter="all">Todas</button>
+          <button class="filter-btn" data-filter="perigo">Em Perigo</button>
+          <button class="filter-btn" data-filter="vulneravel">Vulnerável</button>
+          <button class="filter-btn" data-filter="estavel">Estavel</button>
+        </div>
       </div>
 
       <div class="usage-guide">
@@ -101,12 +115,6 @@
       </div>
     </div>
 
-    <div class="species-filters">
-      <button class="filter-btn active" data-filter="all">Todas</button>
-      <button class="filter-btn" data-filter="perigo">Em Perigo</button>
-      <button class="filter-btn" data-filter="vulneravel">Vulnerável</button>
-      <button class="filter-btn" data-filter="estavel">Estavel</button>
-    </div>
 
     <div class="species-grid" id="speciesGrid">
       <!-- Os cards serao adicionados dinamicamente -->
@@ -168,12 +176,12 @@
   </section>
 
   <section id="contato" class="section fade-in">
-    <div class="section-content">
-      <h2>Contato</h2>
+    <div id="footer" class="section-content">
+      <h2 style="color: var(--titles);">Contato</h2>
       <p>Para mais informações sobre o CATNEE ou para contribuir com o projeto, entre em contato conosco:</p>
       <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> Email: info@catnee.cv</p>
-        <p><i class="fas fa-phone"></i> Telefone: +238 123 4567</p>
+        <p><i style="color: var(--titles);" class="fas fa-envelope"></i> Email: info@catnee.cv</p>
+        <p><i style="color: var(--titles);" class="fas fa-phone"></i> Telefone: +238 123 4567</p>
       </div>
     </div>
   </section>
