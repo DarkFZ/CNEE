@@ -11,7 +11,7 @@ const speciesData = [
     imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/02/Anthocerospunctatus.jpg"
   },
   {
-    name: "Lophocolea bidentata (L.) Dumort.",
+    name: "Lophocolea bidentata",
     scientificName: "Lophocolea bidentata (L.) Dumort.",
     status: "Perigo",
     description: "Com talo estreito, com ramificações laterais. Filóides alternos, simétricos, retangulares-ovados, com ponta dividida e dentes espaçados. Parte inferior dos filóides livres e dividida em 2/3. Carateriza-se por filóides simétricos retangular-ovados com ponta dividida e parte inferior livre.",
@@ -22,7 +22,7 @@ const speciesData = [
     imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/12/2020-02-07-17-38-53-800x600.jpg"
   },
   {
-    name: "Acrolejeunea emergens (Mitt.) Steph.",
+    name: "Acrolejeunea emergens",
     scientificName: "Acrolejeunea emergens (Mitt.) Steph. Brid.",
     status: "Critico",
     description: "Com talo, de 1 a 3 cm de comprimento e 1,0 a 2,3 mm de largura. Cor verde quando húmido, amarelado-avermelhado ou acinzentado quando seco. Ramificações curtas ou longas, variando entre tipos Lejeunea (geralmente sexuais) e tipos Frullania (vegetativos). Caulóide com células corticais ventrais de paredes finas. Filóides imbricados junto de cauloides quando secos, abertos e curvados quando húmidos. Lobo de filóide com forma variável, com base dorsal pouco auriculada e ápice arredondado.",
@@ -44,7 +44,7 @@ const speciesData = [
     imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/02/Anthocerospunctatus.jpg"
   },
   {
-    name: "Lophocolea bidentata (L.) Dumort.",
+    name: "Lophocolea bidentata",
     scientificName: "Lophocolea bidentata (L.) Dumort.",
     status: "Perigo",
     description: "Com talo estreito, com ramificações laterais. Filóides alternos, simétricos, retangulares-ovados, com ponta dividida e dentes espaçados. Parte inferior dos filóides livres e dividida em 2/3. Carateriza-se por filóides simétricos retangular-ovados com ponta dividida e parte inferior livre.",
@@ -55,7 +55,7 @@ const speciesData = [
     imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/12/2020-02-07-17-38-53-800x600.jpg"
   },
   {
-    name: "Acrolejeunea emergens (Mitt.) Steph.",
+    name: "Acrolejeunea emergens ",
     scientificName: "Acrolejeunea emergens (Mitt.) Steph. Brid.",
     status: "Perigo",
     description: "Com talo, de 1 a 3 cm de comprimento e 1,0 a 2,3 mm de largura. Cor verde quando húmido, amarelado-avermelhado ou acinzentado quando seco. Ramificações curtas ou longas, variando entre tipos Lejeunea (geralmente sexuais) e tipos Frullania (vegetativos). Caulóide com células corticais ventrais de paredes finas. Filóides imbricados junto de cauloides quando secos, abertos e curvados quando húmidos. Lobo de filóide com forma variável, com base dorsal pouco auriculada e ápice arredondado.",
@@ -77,7 +77,7 @@ const speciesData = [
     imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/02/Anthocerospunctatus.jpg"
   },
   {
-    name: "Lophocolea bidentata (L.) Dumort.",
+    name: "Lophocolea bidentata",
     scientificName: "Lophocolea bidentata (L.) Dumort.",
     status: "Perigo",
     description: "Com talo estreito, com ramificações laterais. Filóides alternos, simétricos, retangulares-ovados, com ponta dividida e dentes espaçados. Parte inferior dos filóides livres e dividida em 2/3. Carateriza-se por filóides simétricos retangular-ovados com ponta dividida e parte inferior livre.",
@@ -88,7 +88,7 @@ const speciesData = [
     imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/12/2020-02-07-17-38-53-800x600.jpg"
   },
   {
-    name: "Acrolejeunea emergens (Mitt.) Steph.",
+    name: "Acrolejeunea emergens",
     scientificName: "Acrolejeunea emergens (Mitt.) Steph. Brid.",
     status: "Perigo",
     description: "Com talo, de 1 a 3 cm de comprimento e 1,0 a 2,3 mm de largura. Cor verde quando húmido, amarelado-avermelhado ou acinzentado quando seco. Ramificações curtas ou longas, variando entre tipos Lejeunea (geralmente sexuais) e tipos Frullania (vegetativos). Caulóide com células corticais ventrais de paredes finas. Filóides imbricados junto de cauloides quando secos, abertos e curvados quando húmidos. Lobo de filóide com forma variável, com base dorsal pouco auriculada e ápice arredondado.",
@@ -119,8 +119,8 @@ function createSpeciesCard(species) {
       <div class="species-info">
         <h3>${species.name}</h3>
         <span class="scientific-name">${species.scientificName}</span>
-        <p class="description">${truncate(species.description,20)}</p>
-        <p><strong>Habitat:</strong> ${truncate(species.habitat,10)}</p>
+        <p class="description">${truncate(species.description,15)}</p>
+        <p><strong>Habitat:</strong> ${truncate(species.habitat,6)}</p>
         <p><strong>Distribuição:</strong> ${species.distribution}</p>
         <span class="conservation-status ${statusClass}">${species.status}</span>
         <a style="color: rgba(0, 0, 255, 0.771);"><strong>More info on Click...</strong></a>
