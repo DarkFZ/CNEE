@@ -7,7 +7,7 @@ const speciesData = [
     habitat: "Áreas montanhosas húmidas acima de 800m de altitude",
     distribution: "Santo Antão, Fogo",
     ecology: "Importante na retenção de água e prevenção da erosão do solo",
-    pdfUrl: "/Docs/https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/02/Anthocerospunctatus.jpg",
+    pdfUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/02/Anthocerospunctatus.jpg",
     imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/02/Anthocerospunctatus.jpg"
   },
   {
