@@ -160,7 +160,8 @@ document.getElementById('searchInput').addEventListener('input', (e) => {
   const filteredSpecies = speciesData.filter(species =>
     species.name.toLowerCase().includes(searchTerm) ||
     species.scientificName.toLowerCase().includes(searchTerm) ||
-    species.description.toLowerCase().includes(searchTerm)
+    species.description.toLowerCase().includes(searchTerm) || 
+    species.distribution.toLowerCase().includes(searchTerm)
   );
   renderSpecies(filteredSpecies);
 });
