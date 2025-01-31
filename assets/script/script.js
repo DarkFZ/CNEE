@@ -293,13 +293,13 @@ window.addEventListener('scroll', () => {
   }
 });
 
-function truncate(description,wordLimit) {
-  if (!description) return ''; // Se for vazia ou indefinida, retorna uma string vazia
-  const words = description.split(' '); // Divide em palavras
+function truncate(dados,wordLimit) {
+  if (!dados) return ''; // Se for vazia ou indefinida, retorna uma string vazia
+  const words = dados.split(' '); // Divide em palavras
   if (words.length > wordLimit) {
     return words.slice(0, wordLimit).join(' ') + '...'; // Mantém apenas o limite e adiciona "..."
   }
-  return description; // Retorna a descrição original se estiver dentro do limite
+  return dados; 
 }
 
 
