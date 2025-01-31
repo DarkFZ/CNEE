@@ -100,6 +100,8 @@ const speciesData = [
   }
 ];
 
+const wordLimit = 20;
+
 function createSpeciesCard(species) {
   const statusClass = `status-${species.status.toLowerCase().replace(/\s+/g, '-')}`;
 
@@ -118,7 +120,7 @@ function createSpeciesCard(species) {
       <div class="species-info">
         <h3>${species.name}</h3>
         <span class="scientific-name">${species.scientificName}</span>
-        <p class="description">${species.description}</p>
+        <p class="description">${truncateDescription(species.description)}.</p>
         <p><strong>Habitat:</strong> ${species.habitat}</p>
         <p><strong>Distribuição:</strong> ${species.distribution}</p>
         <span class="conservation-status ${statusClass}">${species.status}</span>
@@ -291,6 +293,16 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('scrolled');
   }
 });
+
+function truncateDescription(description) {
+  if (!description) return ''; // Se a descrição for vazia ou indefinida, retorna uma string vazia
+  const words = description.split(' '); // Divide a descrição em palavras
+  if (words.length > wordLimit) {
+    return words.slice(0, wordLimit).join(' ') + '...'; // Mantém apenas o limite e adiciona "..."
+  }
+  return description; // Retorna a descrição original se estiver dentro do limite
+}
+
 
 // Initial render
 renderSpecies(speciesData);
