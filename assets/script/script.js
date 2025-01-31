@@ -218,7 +218,6 @@ function renderSpecies(speciesList) {
 // Add filter event listeners
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', (e) => {
-    // Update active button
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     e.target.classList.add('active');
 
