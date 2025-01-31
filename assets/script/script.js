@@ -100,7 +100,6 @@ const speciesData = [
   }
 ];
 
-const wordLimit = 20;
 
 function createSpeciesCard(species) {
   const statusClass = `status-${species.status.toLowerCase().replace(/\s+/g, '-')}`;
@@ -120,8 +119,8 @@ function createSpeciesCard(species) {
       <div class="species-info">
         <h3>${species.name}</h3>
         <span class="scientific-name">${species.scientificName}</span>
-        <p class="description">${truncateDescription(species.description)}.</p>
-        <p><strong>Habitat:</strong> ${species.habitat}</p>
+        <p class="description">${truncate(species.description,20)}</p>
+        <p><strong>Habitat:</strong> ${truncate(species.habitat,10)}</p>
         <p><strong>Distribuição:</strong> ${species.distribution}</p>
         <span class="conservation-status ${statusClass}">${species.status}</span>
         <a style="color: rgba(0, 0, 255, 0.771);"><strong>More info on Click...</strong></a>
@@ -294,9 +293,9 @@ window.addEventListener('scroll', () => {
   }
 });
 
-function truncateDescription(description) {
-  if (!description) return ''; // Se a descrição for vazia ou indefinida, retorna uma string vazia
-  const words = description.split(' '); // Divide a descrição em palavras
+function truncate(description,wordLimit) {
+  if (!description) return ''; // Se for vazia ou indefinida, retorna uma string vazia
+  const words = description.split(' '); // Divide em palavras
   if (words.length > wordLimit) {
     return words.slice(0, wordLimit).join(' ') + '...'; // Mantém apenas o limite e adiciona "..."
   }
