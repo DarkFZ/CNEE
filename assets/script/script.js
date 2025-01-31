@@ -42,6 +42,61 @@ const speciesData = [
     ecology: "Pioneira na colonização de rochas, contribuindo para formação de solo",
     pdfUrl: "https://catnee.cv/docs/bryum_canariense.pdf",
     imgUrl: "/assets/img/Fotos-briofitas-ciclo-carbono-1.png"
+  },
+  {
+    "name": "Fissidens fontanus",
+    "scientificName": "Fissidens fontanus (Bach. Pyl.) Steud.",
+    "status": "Pouco Preocupante",
+    "description": "Musgo aquático que cresce em águas doces, fixando-se em pedras submersas.",
+    "habitat": "Riachos e fontes de água doce",
+    "distribution": "Santo Antão, Santiago",
+    "ecology": "Ajuda na estabilização de sedimentos em ambientes aquáticos.",
+    "pdfUrl": "https://catnee.cv/docs/fissidens_fontanus.pdf",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Fissidens_fontanus.jpeg"
+  },
+  {
+    "name": "Tortella flavovirens",
+    "scientificName": "Tortella flavovirens (Bruch) Broth.",
+    "status": "Em Perigo",
+    "description": "Musgo calcícola encontrado em solos alcalinos próximos à costa.",
+    "habitat": "Dunas calcárias e falésias costeiras",
+    "distribution": "Boa Vista, Sal",
+    "ecology": "Resistente a altas salinidades, ajuda na fixação de dunas.",
+    "pdfUrl": "https://catnee.cv/docs/tortella_flavovirens.pdf",
+    "imgUrl": "https://bryophyteportal.org/portal/imagelib/imglib/thumbs/Tortella_flavovirens.jpeg"
+  },
+  {
+    name: "Barbula indica",
+    scientificName: "Barbula indica (Hook.) Spreng.",
+    status: "Vulnerável",
+    description: "Musgo que cresce em superfícies expostas a altos níveis de radiação solar.",
+    habitat: "Rochas expostas e solos secos",
+    distribution: "Maio, São Nicolau",
+    ecology: "Adapta-se bem a condições áridas, auxiliando na retenção de umidade.",
+    pdfUrl: "https://catnee.cv/docs/barbula_indica.pdf",
+    imgUrl: "https://bryophyteportal.org/portal/imagelib/imglib/thumbs/Barbula_indica.jpeg"
+  },
+  {
+    name: "Campylopus pilifer",
+    scientificName: "Campylopus pilifer (Hedw.) Brid.",
+    status: "Quase Ameaçado",
+    description: "Musgo característico de substratos arenosos e solos pobres.",
+    habitat: "Dunas e áreas degradadas",
+    distribution: "Santo Antão, Fogo",
+    ecology: "Importante na estabilização de solos frágeis e recuperação de áreas degradadas.",
+    pdfUrl: "https://catnee.cv/docs/campylopus_pilifer.pdf",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Campylopus_pilifer.jpeg"
+  },
+  {
+    "name": "Riccia cavernosa",
+    "scientificName": "Riccia cavernosa Hoffm.",
+    "status": "Em Perigo Crítico",
+    "description": "Hepática talosa encontrada em solos sazonais úmidos.",
+    "habitat": "Solo argiloso em zonas húmidas temporárias",
+    "distribution": "Santiago, Fogo",
+    "ecology": "Contribui para a formação de matéria orgânica no solo.",
+    "pdfUrl": "https://catnee.cv/docs/riccia_cavernosa.pdf",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Riccia_cavernosa.jpeg"
   }
 ];
 
@@ -105,7 +160,7 @@ document.getElementById('searchInput').addEventListener('input', (e) => {
   const filteredSpecies = speciesData.filter(species =>
     species.name.toLowerCase().includes(searchTerm) ||
     species.scientificName.toLowerCase().includes(searchTerm) ||
-    species.description.toLowerCase().includes(searchTerm)
+    species.description.toLowerCase().includes(searchTerm) || species.distribution.toLocaleLowerCase().includes(searchTerm)
   );
   renderSpecies(filteredSpecies);
 });
