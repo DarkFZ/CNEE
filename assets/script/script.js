@@ -7,8 +7,8 @@ const speciesData = [
     habitat: "Áreas montanhosas húmidas acima de 800m de altitude",
     distribution: "Santo Antão, Fogo",
     ecology: "Importante na retenção de água e prevenção da erosão do solo",
-    pdfUrl: "https://catnee.cv/docs/riccia_atlantica.pdf",
-    imgUrl: "/assets/img/Fotos-briofitas-ciclo-carbono-1.png"
+    pdfUrl: "/Docs/https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/02/Anthocerospunctatus.jpg",
+    imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/02/Anthocerospunctatus.jpg"
   },
   {
     name: "Bryum canariense",
