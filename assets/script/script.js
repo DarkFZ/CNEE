@@ -24,7 +24,7 @@ const speciesData = [
   {
     name: "Acrolejeunea emergens (Mitt.) Steph.",
     scientificName: "Acrolejeunea emergens (Mitt.) Steph. Brid.",
-    status: "Perigo",
+    status: "Critico",
     description: "Com talo, de 1 a 3 cm de comprimento e 1,0 a 2,3 mm de largura. Cor verde quando húmido, amarelado-avermelhado ou acinzentado quando seco. Ramificações curtas ou longas, variando entre tipos Lejeunea (geralmente sexuais) e tipos Frullania (vegetativos). Caulóide com células corticais ventrais de paredes finas. Filóides imbricados junto de cauloides quando secos, abertos e curvados quando húmidos. Lobo de filóide com forma variável, com base dorsal pouco auriculada e ápice arredondado.",
     habitat: "Frequente na casca de árvores, troncos ou rochas",
     distribution: "Cabo Verde",
