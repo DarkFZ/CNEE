@@ -1,3 +1,4 @@
+//Contains all species
 const speciesData = [
   {
     name: "Anthoceros punctatus",
@@ -100,11 +101,11 @@ const speciesData = [
   }
 ];
 
-
+//This function is to create all species card 
 function createSpeciesCard(species) {
-  const statusClass = `status-${species.status.toLowerCase().replace(/\s+/g, '-')}`;
+  const statusClass = `status-${species.status.toLowerCase().replace(/\s+/g, '-')}`; //Change the species status to lower case and remove all empty spaces to -
 
-  return `
+  return `                  //return the html card species by specie
     <div class="species-card" 
          onclick="showSpeciesDetail('${species.name}')"
          role="button"
@@ -129,7 +130,7 @@ function createSpeciesCard(species) {
   `;
 }
 
-function showSpeciesDetail(speciesName) {
+function showSpeciesDetail(speciesName) { //Show the species details 
   const species = speciesData.find(s => s.name === speciesName);
   const modal = document.getElementById('speciesModal');
   const modalContent = document.getElementById('modalContent');
@@ -152,14 +153,14 @@ function showSpeciesDetail(speciesName) {
   modal.style.display = 'block';
 }
 
-document.getElementById('closeModal').addEventListener('click', () => {
+document.getElementById('closeModal').addEventListener('click', () => { //Close modal event listener to close modal
   document.getElementById('speciesModal').style.display = 'none';
 });
 
 document.getElementById('searchInput').addEventListener('input', (e) => {
-  const searchTerm = e.target.value.toLowerCase();
-  const filteredSpecies = speciesData.filter(species =>
-    species.name.toLowerCase().includes(searchTerm) ||
+  const searchTerm = e.target.value.toLowerCase();  
+  const filteredSpecies = speciesData.filter(species => //Create an array filter with all the species filtered   
+    species.name.toLowerCase().includes(searchTerm) ||  //Compare the input with name, scientific name, description and the distribution
     species.scientificName.toLowerCase().includes(searchTerm) ||
     species.description.toLowerCase().includes(searchTerm) || 
     species.distribution.toLowerCase().includes(searchTerm)
@@ -182,6 +183,7 @@ const observerOptions = {
   rootMargin: '0px 0px -50px 0px'
 };
 
+//Apply the fade-in animation when the section get into the ViewPort
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -211,9 +213,9 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-function renderSpecies(speciesList) {
+function renderSpecies(speciesList) { //Create the species cards grid   
   const grid = document.getElementById('speciesGrid');
-  grid.innerHTML = speciesList.map(species => createSpeciesCard(species)).join('');
+  grid.innerHTML = speciesList.map(species => createSpeciesCard(species)).join(''); //Join all objects without any comma
 }
 
 // Add filter event listeners
@@ -229,7 +231,7 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
         species.status.toLowerCase().includes(filter.toLowerCase())
       );
 
-    renderSpecies(filteredSpecies);
+    renderSpecies(filteredSpecies); //Render all species card filtered
   });
 });
 
@@ -294,10 +296,10 @@ window.addEventListener('scroll', () => {
 });
 
 function truncate(dados,wordLimit) {
-  if (!dados) return ''; // Se for vazia ou indefinida, retorna uma string vazia
-  const words = dados.split(' '); // Divide em palavras
+  if (!dados) return ''; // If is empty and not defined, return an empty string
+  const words = dados.split(' '); // split the words
   if (words.length > wordLimit) {
-    return words.slice(0, wordLimit).join(' ') + '...'; // Mantém apenas o limite e adiciona "..."
+    return words.slice(0, wordLimit).join(' ') + '...'; // Mantain the limit and add "..."
   }
   return dados; 
 }
