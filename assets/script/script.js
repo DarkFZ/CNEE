@@ -104,8 +104,8 @@ const speciesData = [
 //This function is to create all species card 
 function createSpeciesCard(species) {
   const statusClass = `status-${species.status.toLowerCase().replace(/\s+/g, '-')}`; //Change the species status to lower case and remove all empty spaces to -
-
-  return `                  //return the html card species by specie
+//return the html card species by specie
+  return `                  
     <div class="species-card" 
          onclick="showSpeciesDetail('${species.name}')"
          role="button"
