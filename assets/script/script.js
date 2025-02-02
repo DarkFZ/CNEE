@@ -124,7 +124,7 @@ function createSpeciesCard(species) {
         <p><strong>Habitat:</strong> ${truncate(species.habitat,6)}</p>
         <p><strong>Distribuição:</strong> ${species.distribution}</p>
         <span class="conservation-status ${statusClass}">${species.status}</span>
-        <a style="color: rgba(0, 0, 255, 0.771);"><strong>More info on Click...</strong></a>
+        <a style="color: rgba(0, 0, 255, 0.771); cursor:pointer;"><strong>More info on Click...</strong></a>
       </div>
     </div>
   `;
