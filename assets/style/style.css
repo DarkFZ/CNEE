@@ -773,3 +773,6 @@ html {
 #inida{
     padding: 0;
 }
+#dir{
+flex-direction:column;
+}
