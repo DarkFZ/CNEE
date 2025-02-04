@@ -711,8 +711,10 @@ html {
 }
 
 #contato {
+    padding-left: 16px;
     background-color: var(--accent);
     color: white;
+    flex-direction: row-reverse;
 }
 
 #title {
