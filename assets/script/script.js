@@ -42,7 +42,7 @@ const speciesData = [
     distribution: "Santiago",
     ecology: "Importante na retenção de água e prevenção da erosão do solo",
     pdfUrl: "/Docs/Anthoceros-punctatus-agrestis.pdf",
-    imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/02/Anthocerospunctatus.jpg"
+    imgUrl: "https://images.squarespace-cdn.com/content/v1/52668d02e4b0f593739ec2b6/1382572347149-M4MV02M02GP4MFWPWN6C/775px-Marchantia.jpg?format=2500w"
   },
   {
     name: "Moss",
