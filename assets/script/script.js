@@ -14,7 +14,7 @@ const speciesData = [
   {
     name: "Lophocolea bidentata",
     scientificName: "Lophocolea bidentata (L.) Dumort.",
-    status: "Perigo",
+    status: "Estavel",
     description: "Com talo estreito, com ramificações laterais. Filóides alternos, simétricos, retangulares-ovados, com ponta dividida e dentes espaçados. Parte inferior dos filóides livres e dividida em 2/3. Carateriza-se por filóides simétricos retangular-ovados com ponta dividida e parte inferior livre.",
     habitat: "Em encostas de solo, madeira em decomposição, cascas deárvores ou rochas, até 1500 m de altitude.",
     distribution: "Fogo",
@@ -34,9 +34,9 @@ const speciesData = [
     imgUrl: "https://api.gbif.org/v1/image/cache/fit-in/500x/occurrence/3334477304/media/6e5ed555f56e25f57fb1f8ce4323ac40"
   },
   {
-    name: "Anthoceros punctatus",
+    name: "Phylum marchantiophyta",
     scientificName: "Anthoceros punctatus",
-    status: "Perigo",
+    status: "Vulneravel",
     description: "Com talo em forma roseta, com cavidades mucilaginosas visíveis como pontos escuros. Esporófitos com a forma de chifre ou vagem, surgindo cedo no talo. Cápsulas castanho escuras quando maduras. Anterídios maduros com pedúnculo e cerca de 100-120(-150) μm de comprimento.",
     habitat: "Solo fresco a húmido, arenoso-argiloso ou argiloso, com baixo teor de cálcio, pH neutro a ligeiramente ácido ou ligeiramente básico.",
     distribution: "Santiago",
@@ -45,15 +45,15 @@ const speciesData = [
     imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/02/Anthocerospunctatus.jpg"
   },
   {
-    name: "Lophocolea bidentata",
-    scientificName: "Lophocolea bidentata (L.) Dumort.",
+    name: "Moss",
+    scientificName: "Moss (Phylum Bryophyta)",
     status: "Perigo",
     description: "Com talo estreito, com ramificações laterais. Filóides alternos, simétricos, retangulares-ovados, com ponta dividida e dentes espaçados. Parte inferior dos filóides livres e dividida em 2/3. Carateriza-se por filóides simétricos retangular-ovados com ponta dividida e parte inferior livre.",
     habitat: "Em encostas de solo, madeira em decomposição, cascas deárvores ou rochas, até 1500 m de altitude.",
     distribution: "Fogo",
     ecology: "Indicadora de qualidade ambiental em ecossistemas montanhosos",
     pdfUrl: "/Docs/Lophocolea-bidentata.pdf",
-    imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/12/2020-02-07-17-38-53-800x600.jpg"
+    imgUrl: "https://www.ross.no/wp-content/2014/12/20141206-DSC_7326-1-4.9-scaled.jpg"
   },
   {
     name: "Acrolejeunea emergens ",
@@ -72,7 +72,7 @@ const speciesData = [
     status: "Perigo",
     description: "Com talo em forma roseta, com cavidades mucilaginosas visíveis como pontos escuros. Esporófitos com a forma de chifre ou vagem, surgindo cedo no talo. Cápsulas castanho escuras quando maduras. Anterídios maduros com pedúnculo e cerca de 100-120(-150) μm de comprimento.",
     habitat: "Solo fresco a húmido, arenoso-argiloso ou argiloso, com baixo teor de cálcio, pH neutro a ligeiramente ácido ou ligeiramente básico.",
-    distribution: "Santiago",
+    distribution: "Sao Vicente",
     ecology: "Importante na retenção de água e prevenção da erosão do solo",
     pdfUrl: "/Docs/Anthoceros-punctatus-agrestis.pdf",
     imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/02/Anthocerospunctatus.jpg"
@@ -80,24 +80,13 @@ const speciesData = [
   {
     name: "Lophocolea bidentata",
     scientificName: "Lophocolea bidentata (L.) Dumort.",
-    status: "Perigo",
+    status: "Vulneravel",
     description: "Com talo estreito, com ramificações laterais. Filóides alternos, simétricos, retangulares-ovados, com ponta dividida e dentes espaçados. Parte inferior dos filóides livres e dividida em 2/3. Carateriza-se por filóides simétricos retangular-ovados com ponta dividida e parte inferior livre.",
     habitat: "Em encostas de solo, madeira em decomposição, cascas deárvores ou rochas, até 1500 m de altitude.",
-    distribution: "Fogo",
+    distribution: "Sal",
     ecology: "Indicadora de qualidade ambiental em ecossistemas montanhosos",
     pdfUrl: "/Docs/Lophocolea-bidentata.pdf",
     imgUrl: "https://www.britishbryologicalsociety.org.uk/wp-content/uploads/2021/12/2020-02-07-17-38-53-800x600.jpg"
-  },
-  {
-    name: "Acrolejeunea emergens",
-    scientificName: "Acrolejeunea emergens (Mitt.) Steph. Brid.",
-    status: "Perigo",
-    description: "Com talo, de 1 a 3 cm de comprimento e 1,0 a 2,3 mm de largura. Cor verde quando húmido, amarelado-avermelhado ou acinzentado quando seco. Ramificações curtas ou longas, variando entre tipos Lejeunea (geralmente sexuais) e tipos Frullania (vegetativos). Caulóide com células corticais ventrais de paredes finas. Filóides imbricados junto de cauloides quando secos, abertos e curvados quando húmidos. Lobo de filóide com forma variável, com base dorsal pouco auriculada e ápice arredondado.",
-    habitat: "Frequente na casca de árvores, troncos ou rochas",
-    distribution: "Cabo Verde",
-    ecology: "Pioneira na colonização de rochas, contribuindo para formação de solo",
-    pdfUrl: "https://api.gbif.org/v1/image/cache/fit-in/500x/occurrence/3334477304/media/6e5ed555f56e25f57fb1f8ce4323ac40",
-    imgUrl: "https://api.gbif.org/v1/image/cache/fit-in/500x/occurrence/3334477304/media/6e5ed555f56e25f57fb1f8ce4323ac40"
   }
 ];
 
