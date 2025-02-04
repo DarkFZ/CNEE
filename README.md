@@ -29,6 +29,8 @@ Esse projeto é usado com os seguintes intuitos:
 - Desenvolvimento pessoal e Team Work.
 
 ## Demonstração
+ - [Demo YouTube]([https://uta.cv/](https://www.youtube.com/watch?v=C35cFn0yI7M))
+https://www.youtube.com/watch?v=C35cFn0yI7M
 - [Demo Figma]([https://uta.cv/](https://www.figma.com/design/XJ1sQkymzdyfJEJIXAtxJb/CATNEE---Bri%C3%B3fitas?node-id=0-1&p=f&t=ViHsLqgS8mHOnfLe-0))
 https://www.figma.com/design/XJ1sQkymzdyfJEJIXAtxJb/CATNEE---Bri%C3%B3fitas?node-id=0-1&p=f&t=ViHsLqgS8mHOnfLe-0
 
